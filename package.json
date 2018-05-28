@@ -1,0 +1,34 @@
+{
+  "name": "pg-debug",
+  "version": "0.0.1",
+  "description": "Pretty print postgres queries",
+  "repository": "https://github.com/spaceship-labs/pg-debug",
+  "author": "Spaceship Labs",
+  "engines": {
+    "node": ">=8.9",
+    "yarn": ">=1.7"
+  },
+  "scripts": {
+    "lint": "eslint --fix ."
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "chalk": "^2.4.1"
+  },
+  "peerDependencies": {
+    "pg": "^7.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.2",
+    "prettier": "^1.13.0"
+  }
+}
